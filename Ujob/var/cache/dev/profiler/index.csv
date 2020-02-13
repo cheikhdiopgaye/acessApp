@@ -1,0 +1,8 @@
+cf52ed,127.0.0.1,GET,http://localhost:8001/api/logincheck,1581599457,2103db,200
+2103db,127.0.0.1,POST,http://localhost:8001/api/logincheck,1581599458,,400
+6adc1f,127.0.0.1,GET,http://localhost:8001/api/logincheck,1581599560,dffd74,200
+dffd74,127.0.0.1,POST,http://localhost:8001/api/logincheck,1581599560,,400
+90d8a8,127.0.0.1,POST,http://localhost:8001/api/logincheck,1581599718,,401
+1fe174,127.0.0.1,GET,http://localhost:8000/api/logincheck,1581600252,1765c0,200
+1765c0,127.0.0.1,POST,http://localhost:8000/api/logincheck,1581600253,,500
+1268d5,127.0.0.1,POST,http://localhost:8000/api/logincheck,1581600299,,200
