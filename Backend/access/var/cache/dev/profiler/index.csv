@@ -1,5 +1,0 @@
-fb3539,127.0.0.1,GET,http://localhost:8000/api/logincheck,1581522123,e1c37a,404
-e1c37a,127.0.0.1,POST,http://localhost:8000/api/logincheck,1581522123,,404
-0fda49,127.0.0.1,GET,http://localhost:8000/logincheck,1581522175,d0805d,500
-d0805d,127.0.0.1,POST,http://localhost:8000/logincheck,1581522175,,500
-644080,127.0.0.1,POST,http://localhost:8000/api/logincheck,1581522346,,200

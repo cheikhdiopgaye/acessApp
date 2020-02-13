@@ -20,15 +20,6 @@ class Entreprise
      */
     private $id;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $email;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $password;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -40,20 +31,12 @@ class Entreprise
      */
     private $adresseentreprise;
 
-    /**
-     * @ORM\Column(type="integer")
-     */
-    private $teleentreprise;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
     private $description;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $statutentreprise;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -61,42 +44,19 @@ class Entreprise
     private $logo;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Offre", mappedBy="entreprise")
+     * @ORM\OneToMany(targetEntity="App\Entity\Annonceur", mappedBy="entreprise")
      */
-    private $offress;
+    private $annonceurs;
 
     public function __construct()
     {
-        $this->offress = new ArrayCollection();
+        $this->annonceurs = new ArrayCollection();
     }
+
 
     public function getId(): ?int
     {
         return $this->id;
-    }
-
-    public function getEmail(): ?string
-    {
-        return $this->email;
-    }
-
-    public function setEmail(string $email): self
-    {
-        $this->email = $email;
-
-        return $this;
-    }
-
-    public function getPassword(): ?string
-    {
-        return $this->password;
-    }
-
-    public function setPassword(string $password): self
-    {
-        $this->password = $password;
-
-        return $this;
     }
 
     public function getNomentreprise(): ?string
@@ -123,17 +83,6 @@ class Entreprise
         return $this;
     }
 
-    public function getTeleentreprise(): ?int
-    {
-        return $this->teleentreprise;
-    }
-
-    public function setTeleentreprise(int $teleentreprise): self
-    {
-        $this->teleentreprise = $teleentreprise;
-
-        return $this;
-    }
 
     public function getDescription(): ?string
     {
@@ -143,18 +92,6 @@ class Entreprise
     public function setDescription(string $description): self
     {
         $this->description = $description;
-
-        return $this;
-    }
-
-    public function getStatutentreprise(): ?string
-    {
-        return $this->statutentreprise;
-    }
-
-    public function setStatutentreprise(string $statutentreprise): self
-    {
-        $this->statutentreprise = $statutentreprise;
 
         return $this;
     }
@@ -172,33 +109,34 @@ class Entreprise
     }
 
     /**
-     * @return Collection|Offre[]
+     * @return Collection|Annonceur[]
      */
-    public function getOffress(): Collection
+    public function getAnnonceurs(): Collection
     {
-        return $this->offress;
+        return $this->annonceurs;
     }
 
-    public function addOffress(Offre $offress): self
+    public function addAnnonceur(Annonceur $annonceur): self
     {
-        if (!$this->offress->contains($offress)) {
-            $this->offress[] = $offress;
-            $offress->setEntreprise($this);
+        if (!$this->annonceurs->contains($annonceur)) {
+            $this->annonceurs[] = $annonceur;
+            $annonceur->setEntreprise($this);
         }
 
         return $this;
     }
 
-    public function removeOffress(Offre $offress): self
+    public function removeAnnonceur(Annonceur $annonceur): self
     {
-        if ($this->offress->contains($offress)) {
-            $this->offress->removeElement($offress);
+        if ($this->annonceurs->contains($annonceur)) {
+            $this->annonceurs->removeElement($annonceur);
             // set the owning side to null (unless already changed)
-            if ($offress->getEntreprise() === $this) {
-                $offress->setEntreprise(null);
+            if ($annonceur->getEntreprise() === $this) {
+                $annonceur->setEntreprise(null);
             }
         }
 
         return $this;
     }
+
 }

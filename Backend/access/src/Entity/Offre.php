@@ -56,14 +56,15 @@ class Offre
     private $user;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Entreprise", inversedBy="offress")
+     * @ORM\Column(type="string", length=255)
      */
-    private $entreprise;
+    private $region;
 
-    public function __construct()
-    {
-        $this->user = new ArrayCollection();
-    }
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Annonceur", inversedBy="offress")
+     */
+    private $annonceur;
+
 
     public function getId(): ?int
     {
@@ -168,15 +169,28 @@ class Offre
         return $this;
     }
 
-    public function getEntreprise(): ?Entreprise
+    public function getRegion(): ?string
     {
-        return $this->entreprise;
+        return $this->region;
     }
 
-    public function setEntreprise(?Entreprise $entreprise): self
+    public function setRegion(string $region): self
     {
-        $this->entreprise = $entreprise;
+        $this->region = $region;
 
         return $this;
     }
+
+    public function getAnnonceur(): ?Annonceur
+    {
+        return $this->annonceur;
+    }
+
+    public function setAnnonceur(?Annonceur $annonceur): self
+    {
+        $this->annonceur = $annonceur;
+
+        return $this;
+    }
+
 }
