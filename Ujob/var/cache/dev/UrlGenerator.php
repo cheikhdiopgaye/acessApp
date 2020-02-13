@@ -15,7 +15,7 @@ return [
     '_profiler_router' => [['token'], ['_controller' => 'web_profiler.controller.router::panelAction'], [], [['text', '/router'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception::showAction'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception::cssAction'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
-    'annonceur' => [[], ['_controller' => 'App\\Controller\\AnnonceurController::index'], [], [['text', '/annonceur']], [], []],
+    'inscriptionannonceu' => [[], ['_controller' => 'App\\Controller\\AnnonceurController::adduser'], [], [['text', '/api/inscriptionannonceur']], [], []],
     'candidat' => [[], ['_controller' => 'App\\Controller\\CandidatController::index'], [], [['text', '/candidat']], [], []],
     'offre' => [[], ['_controller' => 'App\\Controller\\OffreController::index'], [], [['text', '/offre']], [], []],
     'login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/api/logincheck']], [], []],
