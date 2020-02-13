@@ -161,6 +161,6 @@ class __TwigTemplate_f86616ebd2b8171b1cabb311c51d52619c3c54be77a76c3fe6518946c55
         </tr>
     </tbody>
 </table>
-", "@Twig/Exception/traces_text.html.twig", "/home/elina/Ujob/Ujob/vendor/symfony/twig-bundle/Resources/views/Exception/traces_text.html.twig");
+", "@Twig/Exception/traces_text.html.twig", "/home/cheikhgaye/AcessApp/Ujob/vendor/symfony/twig-bundle/Resources/views/Exception/traces_text.html.twig");
     }
 }

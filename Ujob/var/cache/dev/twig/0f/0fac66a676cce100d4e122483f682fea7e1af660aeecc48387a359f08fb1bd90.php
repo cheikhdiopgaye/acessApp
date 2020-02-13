@@ -97,6 +97,6 @@ class __TwigTemplate_6f411d4c3e69ce3d045ec128fa376a2d29886f9a2cdc0947a14d9133575
     <?php endif ?>
     <?php echo \$view['form']->block(\$form, 'choice_widget_options', ['choices' => \$choices]) ?>
 </select>
-", "@Framework/Form/choice_widget_collapsed.html.php", "/home/elina/Ujob/Ujob/vendor/symfony/framework-bundle/Resources/views/Form/choice_widget_collapsed.html.php");
+", "@Framework/Form/choice_widget_collapsed.html.php", "/home/cheikhgaye/AcessApp/Ujob/vendor/symfony/framework-bundle/Resources/views/Form/choice_widget_collapsed.html.php");
     }
 }

@@ -154,6 +154,6 @@ class __TwigTemplate_d8ec2ba18b7fb5b5073918e8f6fba8e95feab775d6f91ee9b0b892f4e3f
     </ul>
 </div>
 {% endblock %}
-", "annonceur/index.html.twig", "/home/elina/Ujob/Ujob/templates/annonceur/index.html.twig");
+", "annonceur/index.html.twig", "/home/cheikhgaye/AcessApp/Ujob/templates/annonceur/index.html.twig");
     }
 }

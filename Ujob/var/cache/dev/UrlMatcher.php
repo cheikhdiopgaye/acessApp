@@ -14,7 +14,7 @@ return [
         '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
         '/annonceur' => [[['_route' => 'annonceur', '_controller' => 'App\\Controller\\AnnonceurController::index'], null, null, null, false, false, null]],
-        '/candidat' => [[['_route' => 'candidat', '_controller' => 'App\\Controller\\CandidatController::index'], null, null, null, false, false, null]],
+        '/api/inscriptionC' => [[['_route' => 'inscriptionC', '_controller' => 'App\\Controller\\CandidatController::inscriptionCandidat'], null, ['POST' => 0], null, false, false, null]],
         '/offre' => [[['_route' => 'offre', '_controller' => 'App\\Controller\\OffreController::index'], null, null, null, false, false, null]],
         '/api/logincheck' => [[['_route' => 'login', '_controller' => 'App\\Controller\\SecurityController::login'], null, ['POST' => 0, 'GET' => 1], null, false, false, null]],
     ],

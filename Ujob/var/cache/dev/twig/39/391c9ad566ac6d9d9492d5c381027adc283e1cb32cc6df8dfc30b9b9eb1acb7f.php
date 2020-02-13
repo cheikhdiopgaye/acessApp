@@ -1006,6 +1006,6 @@ class __TwigTemplate_f2f1c3a3ede25a8c6f0e033bbd5d491ca518da846c9eb97e9aae1a60e8f
         {% endif %}
     {% endfor %}
 {% endblock %}
-", "@Swiftmailer/Collector/swiftmailer.html.twig", "/home/elina/Ujob/Ujob/vendor/symfony/swiftmailer-bundle/Resources/views/Collector/swiftmailer.html.twig");
+", "@Swiftmailer/Collector/swiftmailer.html.twig", "/home/cheikhgaye/AcessApp/Ujob/vendor/symfony/swiftmailer-bundle/Resources/views/Collector/swiftmailer.html.twig");
     }
 }

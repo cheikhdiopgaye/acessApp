@@ -893,6 +893,6 @@ class SvgRenderer {
         return element;
     }
 }
-", "@WebProfiler/Collector/time.js", "/home/elina/Ujob/Ujob/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.js");
+", "@WebProfiler/Collector/time.js", "/home/cheikhgaye/AcessApp/Ujob/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.js");
     }
 }

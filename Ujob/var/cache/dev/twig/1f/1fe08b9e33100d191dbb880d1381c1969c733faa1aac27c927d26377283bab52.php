@@ -79,6 +79,6 @@ class __TwigTemplate_9462e3a307107efdc80ba359edd94a53d6d71082277d9722afe834ab39d
 {{ status_code }} {{ status_text }}
 
 */
-", "@Twig/Exception/error.css.twig", "/home/elina/Ujob/Ujob/vendor/symfony/twig-bundle/Resources/views/Exception/error.css.twig");
+", "@Twig/Exception/error.css.twig", "/home/cheikhgaye/AcessApp/Ujob/vendor/symfony/twig-bundle/Resources/views/Exception/error.css.twig");
     }
 }

@@ -798,6 +798,6 @@ class __TwigTemplate_4b87f5159b5ced17026799372d53a24b8b6c6b91ec7500a733ccdad02de
     </table>
     {% endfor %}
 {% endmacro %}
-", "@WebProfiler/Collector/messenger.html.twig", "/home/elina/Ujob/Ujob/vendor/symfony/web-profiler-bundle/Resources/views/Collector/messenger.html.twig");
+", "@WebProfiler/Collector/messenger.html.twig", "/home/cheikhgaye/AcessApp/Ujob/vendor/symfony/web-profiler-bundle/Resources/views/Collector/messenger.html.twig");
     }
 }

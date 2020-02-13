@@ -155,6 +155,6 @@ class __TwigTemplate_0c0b72e961291268ddb281f0ef19a6b9a128e5d03ebc3576b8a9d5b0f64
 {% block panel %}
     {{ render(path('_profiler_router', { token: token })) }}
 {% endblock %}
-", "@WebProfiler/Collector/router.html.twig", "/home/elina/Ujob/Ujob/vendor/symfony/web-profiler-bundle/Resources/views/Collector/router.html.twig");
+", "@WebProfiler/Collector/router.html.twig", "/home/cheikhgaye/AcessApp/Ujob/vendor/symfony/web-profiler-bundle/Resources/views/Collector/router.html.twig");
     }
 }

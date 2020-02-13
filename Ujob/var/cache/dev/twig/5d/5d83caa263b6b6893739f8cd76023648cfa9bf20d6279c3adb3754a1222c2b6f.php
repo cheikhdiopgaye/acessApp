@@ -227,6 +227,6 @@ class __TwigTemplate_0780a735149a8abae07c7ef45a26522ade9562ed7b0711d42a8e8745427
         {{ include('@Twig/base_js.html.twig') }}
     </body>
 </html>
-", "@Twig/layout.html.twig", "/home/elina/Ujob/Ujob/vendor/symfony/twig-bundle/Resources/views/layout.html.twig");
+", "@Twig/layout.html.twig", "/home/cheikhgaye/AcessApp/Ujob/vendor/symfony/twig-bundle/Resources/views/layout.html.twig");
     }
 }

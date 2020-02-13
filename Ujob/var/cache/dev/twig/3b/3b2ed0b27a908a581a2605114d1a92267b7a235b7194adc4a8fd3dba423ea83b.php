@@ -171,6 +171,6 @@ class __TwigTemplate_ae8e2f361aa2e9b8f5cb3da7dd587f4cdda6a03802c34d7e0599803a493
         {%- endfor -%}
     </pre>
 {% endif %}
-", "@Doctrine/Collector/explain.html.twig", "/home/elina/Ujob/Ujob/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
+", "@Doctrine/Collector/explain.html.twig", "/home/cheikhgaye/AcessApp/Ujob/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
     }
 }

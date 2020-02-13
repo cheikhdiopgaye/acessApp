@@ -69,6 +69,6 @@ class __TwigTemplate_87f24f66ff8be8896ac7fc85d6eec4178f6726e4ba2c239226bcfeb4ff1
     public function getSourceContext()
     {
         return new Source("{{ { 'error': { 'code': status_code, 'message': status_text } }|json_encode|raw }}
-", "@Twig/Exception/error.json.twig", "/home/elina/Ujob/Ujob/vendor/symfony/twig-bundle/Resources/views/Exception/error.json.twig");
+", "@Twig/Exception/error.json.twig", "/home/cheikhgaye/AcessApp/Ujob/vendor/symfony/twig-bundle/Resources/views/Exception/error.json.twig");
     }
 }

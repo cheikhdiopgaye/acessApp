@@ -16,7 +16,7 @@ return [
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception::showAction'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception::cssAction'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     'annonceur' => [[], ['_controller' => 'App\\Controller\\AnnonceurController::index'], [], [['text', '/annonceur']], [], []],
-    'candidat' => [[], ['_controller' => 'App\\Controller\\CandidatController::index'], [], [['text', '/candidat']], [], []],
+    'inscriptionC' => [[], ['_controller' => 'App\\Controller\\CandidatController::inscriptionCandidat'], [], [['text', '/api/inscriptionC']], [], []],
     'offre' => [[], ['_controller' => 'App\\Controller\\OffreController::index'], [], [['text', '/offre']], [], []],
     'login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/api/logincheck']], [], []],
     'api_entrypoint' => [['index', '_format'], ['_controller' => 'api_platform.action.entrypoint', '_format' => '', '_api_respond' => 'true', 'index' => 'index'], ['index' => 'index'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', 'index', 'index', true], ['text', '/api']], [], []],

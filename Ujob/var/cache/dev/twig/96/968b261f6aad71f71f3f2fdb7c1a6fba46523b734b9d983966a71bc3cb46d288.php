@@ -139,6 +139,6 @@ class __TwigTemplate_ac132784730e1849dc3a02c4f020da27a6d73444f0d2838f9eb6b33f078
 
 </body>
 </html>
-", "@ApiPlatform/Graphiql/index.html.twig", "/home/elina/Ujob/Ujob/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views/Graphiql/index.html.twig");
+", "@ApiPlatform/Graphiql/index.html.twig", "/home/cheikhgaye/AcessApp/Ujob/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views/Graphiql/index.html.twig");
     }
 }

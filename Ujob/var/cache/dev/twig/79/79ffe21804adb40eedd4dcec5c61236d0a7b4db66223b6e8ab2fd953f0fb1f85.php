@@ -122,6 +122,6 @@ class __TwigTemplate_0cdf8881ec7cf8bbc05cd7c8d998c48226cc20032bd8f5e982f92988206
         {% endfor %}
     </tbody>
 </table>
-", "@WebProfiler/Profiler/table.html.twig", "/home/elina/Ujob/Ujob/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/table.html.twig");
+", "@WebProfiler/Profiler/table.html.twig", "/home/cheikhgaye/AcessApp/Ujob/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/table.html.twig");
     }
 }

@@ -189,6 +189,6 @@ class __TwigTemplate_86a3a1fac9bb604b524da454b3224532515b68be2b6ba0e8cb27a5b9bf4
         </div>
     </div>
 </div>
-", "@Twig/Exception/traces.html.twig", "/home/elina/Ujob/Ujob/vendor/symfony/twig-bundle/Resources/views/Exception/traces.html.twig");
+", "@Twig/Exception/traces.html.twig", "/home/cheikhgaye/AcessApp/Ujob/vendor/symfony/twig-bundle/Resources/views/Exception/traces.html.twig");
     }
 }

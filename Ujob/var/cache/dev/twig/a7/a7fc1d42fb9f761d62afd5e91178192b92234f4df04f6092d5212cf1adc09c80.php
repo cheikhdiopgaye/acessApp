@@ -482,6 +482,6 @@ class __TwigTemplate_73cb824aa9892f49fade1cb38f3907ea2d7752f9b043da01b0fc0a4d42a
         {% endfor %}
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/events.html.twig", "/home/elina/Ujob/Ujob/vendor/symfony/web-profiler-bundle/Resources/views/Collector/events.html.twig");
+", "@WebProfiler/Collector/events.html.twig", "/home/cheikhgaye/AcessApp/Ujob/vendor/symfony/web-profiler-bundle/Resources/views/Collector/events.html.twig");
     }
 }

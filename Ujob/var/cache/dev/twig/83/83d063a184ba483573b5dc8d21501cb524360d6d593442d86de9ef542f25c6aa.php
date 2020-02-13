@@ -490,6 +490,6 @@ class __TwigTemplate_867aa1850fa0c3535ea804e000f4989b860b6318acf25680bd082fb95e3
         {% endif %}
     </div>
 </div>
-", "@Twig/Exception/exception.html.twig", "/home/elina/Ujob/Ujob/vendor/symfony/twig-bundle/Resources/views/Exception/exception.html.twig");
+", "@Twig/Exception/exception.html.twig", "/home/cheikhgaye/AcessApp/Ujob/vendor/symfony/twig-bundle/Resources/views/Exception/exception.html.twig");
     }
 }

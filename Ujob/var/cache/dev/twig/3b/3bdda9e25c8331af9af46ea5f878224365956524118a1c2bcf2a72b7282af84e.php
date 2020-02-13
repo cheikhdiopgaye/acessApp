@@ -898,6 +898,6 @@ class __TwigTemplate_3b8721fce673e4170a1368818f030d43fea57498c672ef7285a7a604c82
         </tbody>
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/translation.html.twig", "/home/elina/Ujob/Ujob/vendor/symfony/web-profiler-bundle/Resources/views/Collector/translation.html.twig");
+", "@WebProfiler/Collector/translation.html.twig", "/home/cheikhgaye/AcessApp/Ujob/vendor/symfony/web-profiler-bundle/Resources/views/Collector/translation.html.twig");
     }
 }

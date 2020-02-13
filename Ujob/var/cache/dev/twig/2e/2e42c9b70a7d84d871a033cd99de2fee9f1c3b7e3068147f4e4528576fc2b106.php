@@ -393,6 +393,6 @@ class __TwigTemplate_0dadf07e1265eddebaff972ae9eb8019b91e2c60c3ba07033191dad8e40
 
 </body>
 </html>
-", "@ApiPlatform/SwaggerUi/index.html.twig", "/home/elina/Ujob/Ujob/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views/SwaggerUi/index.html.twig");
+", "@ApiPlatform/SwaggerUi/index.html.twig", "/home/cheikhgaye/AcessApp/Ujob/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views/SwaggerUi/index.html.twig");
     }
 }

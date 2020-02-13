@@ -1140,6 +1140,6 @@ class __TwigTemplate_ca3be56cab801966fb4403c5261617f73fb6e683a98efcacbd8623524c5
 
 </body>
 </html>
-", "@ApiPlatform/GraphQlPlayground/index.html.twig", "/home/elina/Ujob/Ujob/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views/GraphQlPlayground/index.html.twig");
+", "@ApiPlatform/GraphQlPlayground/index.html.twig", "/home/cheikhgaye/AcessApp/Ujob/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views/GraphQlPlayground/index.html.twig");
     }
 }

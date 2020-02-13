@@ -222,6 +222,6 @@ class __TwigTemplate_36881aef4c4cac5c119c1ca03bd71a028c0c50e257cab4d810770ebd3f1
         </div>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/exception.html.twig", "/home/elina/Ujob/Ujob/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.html.twig");
+", "@WebProfiler/Collector/exception.html.twig", "/home/cheikhgaye/AcessApp/Ujob/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.html.twig");
     }
 }

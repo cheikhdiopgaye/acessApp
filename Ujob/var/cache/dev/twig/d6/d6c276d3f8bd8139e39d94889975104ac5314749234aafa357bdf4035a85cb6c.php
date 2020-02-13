@@ -173,6 +173,6 @@ class __TwigTemplate_5ae59c796bc2d7069275aa7cf12a59f737d22be8d1d07fcd97b153207c9
         {% block javascripts %}{% endblock %}
     </body>
 </html>
-", "base.html.twig", "/home/elina/Ujob/Ujob/templates/base.html.twig");
+", "base.html.twig", "/home/cheikhgaye/AcessApp/Ujob/templates/base.html.twig");
     }
 }

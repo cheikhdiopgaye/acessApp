@@ -204,6 +204,6 @@ class __TwigTemplate_f4662b2284263e4d695212ae70aee600169c0bdac2ad1558d91114039af
         })|raw }}
     </div>
 {% endif %}
-", "@Twig/Exception/trace.html.twig", "/home/elina/Ujob/Ujob/vendor/symfony/twig-bundle/Resources/views/Exception/trace.html.twig");
+", "@Twig/Exception/trace.html.twig", "/home/cheikhgaye/AcessApp/Ujob/vendor/symfony/twig-bundle/Resources/views/Exception/trace.html.twig");
     }
 }
