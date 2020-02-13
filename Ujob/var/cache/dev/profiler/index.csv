@@ -6,6 +6,7 @@ dffd74,127.0.0.1,POST,http://localhost:8001/api/logincheck,1581599560,,400
 1fe174,127.0.0.1,GET,http://localhost:8000/api/logincheck,1581600252,1765c0,200
 1765c0,127.0.0.1,POST,http://localhost:8000/api/logincheck,1581600253,,500
 1268d5,127.0.0.1,POST,http://localhost:8000/api/logincheck,1581600299,,200
+<<<<<<< HEAD
 c0dd70,127.0.0.1,GET,http://localhost:8000/api/logincheck,1581608088,47f68f,200
 47f68f,127.0.0.1,POST,http://localhost:8000/api/logincheck,1581608088,,500
 f41755,127.0.0.1,POST,http://localhost:8000/api/logincheck,1581608252,,200
@@ -39,3 +40,7 @@ f39fdd,127.0.0.1,GET,http://localhost:8000/api/inscriptionC,1581617172,9928f4,20
 9928f4,127.0.0.1,POST,http://localhost:8000/api/inscriptionC,1581617172,,500
 43de9c,127.0.0.1,GET,http://localhost:8000/api/inscriptionC,1581617276,a4db1a,200
 a4db1a,127.0.0.1,POST,http://localhost:8000/api/inscriptionC,1581617277,,500
+=======
+57d881,127.0.0.1,POST,http://localhost:8000/api/logincheck,1581616456,,200
+c5dcc2,127.0.0.1,POST,http://localhost:8000/api/inscriptionannonceur,1581617217,,201
+>>>>>>> e4a0b3a7c2caf4a6fd4d61982bc57eae42c64a0e
