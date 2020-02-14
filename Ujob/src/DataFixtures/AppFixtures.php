@@ -28,7 +28,7 @@ class AppFixtures extends Fixture
             $admin1->setTelephone('338695001');
             $admin1->setTelephone1('777806060');
             $admin1->setConfirmepassword('hakimdigital2018');
-            $admin1->setStatut('actif');
+            $admin1->setStatut('Connecter');
     
             $manager->persist($admin1);
             $manager->flush();

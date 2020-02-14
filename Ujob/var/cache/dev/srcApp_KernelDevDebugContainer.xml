@@ -502,10 +502,6 @@
     </service>
     <service id="App\Controller\CandidatController" class="App\Controller\CandidatController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
-      <tag name="container.service_subscriber"/>
-      <call method="setContainer">
-        <argument type="service" id=".service_locator.E18xQID.App\Controller\CandidatController"/>
-      </call>
     </service>
     <service id="App\Controller\OffreController" class="App\Controller\OffreController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
@@ -525,14 +521,16 @@
       <tag name="doctrine.fixture.orm"/>
       <argument type="service" id="security.user_password_encoder.generic"/>
     </service>
-<<<<<<< HEAD
     <service id="App\Form\CandidatType" class="App\Form\CandidatType" autowire="true" autoconfigure="true">
-=======
+      <tag name="form.type"/>
+    </service>
     <service id="App\Form\EntrepriseType" class="App\Form\EntrepriseType" autowire="true" autoconfigure="true">
       <tag name="form.type"/>
     </service>
+    <service id="App\Form\UpdatecandidatType" class="App\Form\UpdatecandidatType" autowire="true" autoconfigure="true">
+      <tag name="form.type"/>
+    </service>
     <service id="App\Form\UserType" class="App\Form\UserType" autowire="true" autoconfigure="true">
->>>>>>> e4a0b3a7c2caf4a6fd4d61982bc57eae42c64a0e
       <tag name="form.type"/>
     </service>
     <service id="App\Repository\EntrepriseRepository" class="App\Repository\EntrepriseRepository" autowire="true" autoconfigure="true">
@@ -897,12 +895,10 @@
         <argument>Symfony\Bridge\Doctrine\Form\Type</argument>
       </argument>
       <argument type="collection">
-<<<<<<< HEAD
         <argument>App\Form\CandidatType</argument>
-=======
         <argument>App\Form\EntrepriseType</argument>
+        <argument>App\Form\UpdatecandidatType</argument>
         <argument>App\Form\UserType</argument>
->>>>>>> e4a0b3a7c2caf4a6fd4d61982bc57eae42c64a0e
         <argument>Symfony\Component\Form\Extension\Core\Type\FormType</argument>
         <argument>Symfony\Component\Form\Extension\Core\Type\ChoiceType</argument>
         <argument>Symfony\Component\Form\Extension\Core\Type\FileType</argument>
@@ -1174,11 +1170,7 @@
       <argument type="service" id="form.registry"/>
     </service>
     <service id="form.extension" class="Symfony\Component\Form\Extension\DependencyInjection\DependencyInjectionExtension" public="false">
-<<<<<<< HEAD
-      <argument type="service" id=".service_locator.aVU.uI3"/>
-=======
-      <argument type="service" id=".service_locator.sNul8nf"/>
->>>>>>> e4a0b3a7c2caf4a6fd4d61982bc57eae42c64a0e
+      <argument type="service" id=".service_locator.BTR8nbQ"/>
       <argument type="collection">
         <argument key="Symfony\Component\Form\Extension\Core\Type\FormType" type="iterator">
           <argument type="service" id="form.type_extension.form.transformation_failure_handling"/>
@@ -2537,14 +2529,6 @@
       </call>
       <call method="addListener">
         <argument>kernel.request</argument>
-        <argument type="collection">
-          <argument type="service" id="debug.debug_handlers_listener"/>
-          <argument>configure</argument>
-        </argument>
-        <argument>2048</argument>
-      </call>
-      <call method="addListener">
-        <argument>console.command</argument>
         <argument type="collection">
           <argument type="service" id="debug.debug_handlers_listener"/>
           <argument>configure</argument>
@@ -6150,8 +6134,7 @@
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\AnnonceurController" class="App\Controller\AnnonceurController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\AnnonceurController" class="App\Controller\AnnonceurController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\AnnonceurController" class="App\Controller\AnnonceurController" autowire="true" autoconfigure="true" abstract="true"/>
-    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\CandidatController" class="App\Controller\CandidatController" autowire="true" abstract="true"/>
-    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\CandidatController" class="App\Controller\CandidatController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\Controller.0.App\Controller\CandidatController" class="App\Controller\CandidatController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\CandidatController" class="App\Controller\CandidatController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\OffreController" class="App\Controller\OffreController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\OffreController" class="App\Controller\OffreController" autowire="true" abstract="true"/>
@@ -6161,15 +6144,14 @@
     <service id=".abstract.instanceof.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\FixturesBundle\ORMFixtureInterface.0.App\DataFixtures\AppFixtures" class="App\DataFixtures\AppFixtures" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\DataFixtures\AppFixtures" class="App\DataFixtures\AppFixtures" autowire="true" autoconfigure="true" abstract="true"/>
-<<<<<<< HEAD
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\CandidatType" class="App\Form\CandidatType" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Form\CandidatType" class="App\Form\CandidatType" autowire="true" autoconfigure="true" abstract="true"/>
-=======
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\EntrepriseType" class="App\Form\EntrepriseType" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Form\EntrepriseType" class="App\Form\EntrepriseType" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\UpdatecandidatType" class="App\Form\UpdatecandidatType" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Form\UpdatecandidatType" class="App\Form\UpdatecandidatType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\UserType" class="App\Form\UserType" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Form\UserType" class="App\Form\UserType" autowire="true" autoconfigure="true" abstract="true"/>
->>>>>>> e4a0b3a7c2caf4a6fd4d61982bc57eae42c64a0e
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\EntrepriseRepository" class="App\Repository\EntrepriseRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\EntrepriseRepository" class="App\Repository\EntrepriseRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\OffreRepository" class="App\Repository\OffreRepository" autowire="true" abstract="true"/>
@@ -6338,7 +6320,13 @@
         <argument>make:migration</argument>
       </call>
     </service>
-<<<<<<< HEAD
+    <service id=".service_locator.JBoVXlr" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="entityManager" type="service" id="doctrine.orm.default_entity_manager"/>
+        <argument key="passwordEncoder" type="service" id="security.user_password_encoder.generic"/>
+      </argument>
+    </service>
     <service id=".service_locator.4Z0MpPr" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -6356,27 +6344,31 @@
         <argument key="validator" type="service" id="debug.validator"/>
       </argument>
     </service>
-    <service id=".service_locator.1XPpg6r" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.xGUOZ2G" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
-        <argument key="App\Controller\CandidatController::inscriptionCandidat" type="service" id=".service_locator.4Z0MpPr"/>
-        <argument key="App\Controller\CandidatController::updateCandidat" type="service" id=".service_locator.EPaifWK"/>
-        <argument key="App\Controller\CandidatController:inscriptionCandidat" type="service" id=".service_locator.4Z0MpPr"/>
-        <argument key="App\Controller\CandidatController:updateCandidat" type="service" id=".service_locator.EPaifWK"/>
-=======
-    <service id=".service_locator.JBoVXlr" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
-      <tag name="container.service_locator"/>
-      <argument type="collection">
-        <argument key="entityManager" type="service" id="doctrine.orm.default_entity_manager"/>
-        <argument key="passwordEncoder" type="service" id="security.user_password_encoder.generic"/>
+        <argument key="manager" type="service" id="doctrine.orm.default_entity_manager"/>
       </argument>
     </service>
-    <service id=".service_locator.lW7PGwZ" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.l2alLEu" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="viewhandler" type="service" id="fos_rest.view_handler.default"/>
+      </argument>
+    </service>
+    <service id=".service_locator.Dn2wURw" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\AnnonceurController::adduser" type="service" id=".service_locator.JBoVXlr"/>
+        <argument key="App\Controller\CandidatController::bloquerCandidat" type="service" id=".service_locator.xGUOZ2G"/>
+        <argument key="App\Controller\CandidatController::inscriptionCandidat" type="service" id=".service_locator.4Z0MpPr"/>
+        <argument key="App\Controller\CandidatController::setViewHandler" type="service" id=".service_locator.l2alLEu"/>
+        <argument key="App\Controller\CandidatController::updateCandidat" type="service" id=".service_locator.EPaifWK"/>
         <argument key="App\Controller\AnnonceurController:adduser" type="service" id=".service_locator.JBoVXlr"/>
->>>>>>> e4a0b3a7c2caf4a6fd4d61982bc57eae42c64a0e
+        <argument key="App\Controller\CandidatController:bloquerCandidat" type="service" id=".service_locator.xGUOZ2G"/>
+        <argument key="App\Controller\CandidatController:inscriptionCandidat" type="service" id=".service_locator.4Z0MpPr"/>
+        <argument key="App\Controller\CandidatController:setViewHandler" type="service" id=".service_locator.l2alLEu"/>
+        <argument key="App\Controller\CandidatController:updateCandidat" type="service" id=".service_locator.EPaifWK"/>
       </argument>
     </service>
     <service id=".service_locator.LtnrEkg" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
@@ -6438,18 +6430,13 @@
       <argument type="service" id="debug.argument_resolver.not_tagged_controller.inner"/>
       <argument type="service" id="debug.stopwatch"/>
     </service>
-<<<<<<< HEAD
-    <service id=".service_locator.aVU.uI3" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.BTR8nbQ" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Form\CandidatType" type="service" id="App\Form\CandidatType"/>
-=======
-    <service id=".service_locator.sNul8nf" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
-      <tag name="container.service_locator"/>
-      <argument type="collection">
         <argument key="App\Form\EntrepriseType" type="service" id="App\Form\EntrepriseType"/>
+        <argument key="App\Form\UpdatecandidatType" type="service" id="App\Form\UpdatecandidatType"/>
         <argument key="App\Form\UserType" type="service" id="App\Form\UserType"/>
->>>>>>> e4a0b3a7c2caf4a6fd4d61982bc57eae42c64a0e
         <argument key="Symfony\Bridge\Doctrine\Form\Type\EntityType" type="service" id="form.type.entity"/>
         <argument key="Symfony\Component\Form\Extension\Core\Type\ChoiceType" type="service" id="form.type.choice"/>
         <argument key="Symfony\Component\Form\Extension\Core\Type\FileType" type="service" id="form.type.file"/>
@@ -6686,12 +6673,6 @@
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.E18xQID" method="withContext"/>
     </service>
-    <service id=".service_locator.E18xQID.App\Controller\CandidatController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
-      <tag name="container.service_locator_context" id="App\Controller\CandidatController"/>
-      <argument>App\Controller\CandidatController</argument>
-      <argument type="service" id="service_container"/>
-      <factory service=".service_locator.E18xQID" method="withContext"/>
-    </service>
     <service id=".service_locator.E18xQID.App\Controller\OffreController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator_context" id="App\Controller\OffreController"/>
       <argument>App\Controller\OffreController</argument>
@@ -6853,20 +6834,12 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver" public="false">
-<<<<<<< HEAD
-      <argument type="service" id=".service_locator.1XPpg6r"/>
-=======
-      <argument type="service" id=".service_locator.lW7PGwZ"/>
->>>>>>> e4a0b3a7c2caf4a6fd4d61982bc57eae42c64a0e
+      <argument type="service" id=".service_locator.Dn2wURw"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver" public="false"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver" public="false"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver" public="false">
-<<<<<<< HEAD
-      <argument type="service" id=".service_locator.1XPpg6r"/>
-=======
-      <argument type="service" id=".service_locator.lW7PGwZ"/>
->>>>>>> e4a0b3a7c2caf4a6fd4d61982bc57eae42c64a0e
+      <argument type="service" id=".service_locator.Dn2wURw"/>
     </service>
     <service id="api_platform.swagger.normalizer.api_gateway.inner" class="ApiPlatform\Core\Swagger\Serializer\DocumentationNormalizer" public="false">
       <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
@@ -7385,11 +7358,7 @@
     <service id="Lexik\Bundle\JWTAuthenticationBundle\Encoder\JWTEncoderInterface" alias="lexik_jwt_authentication.encoder.lcobucci"/>
     <service id="lexik_jwt_authentication.key_loader" alias="lexik_jwt_authentication.key_loader.raw" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem" public="false"/>
-<<<<<<< HEAD
-    <service id="argument_resolver.controller_locator" alias=".service_locator.1XPpg6r"/>
-=======
-    <service id="argument_resolver.controller_locator" alias=".service_locator.lW7PGwZ"/>
->>>>>>> e4a0b3a7c2caf4a6fd4d61982bc57eae42c64a0e
+    <service id="argument_resolver.controller_locator" alias=".service_locator.Dn2wURw"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="Psr\Log\LoggerInterface $requestLogger" alias="monolog.logger.request"/>
     <service id="Psr\Log\LoggerInterface $consoleLogger" alias="monolog.logger.console"/>

@@ -13,13 +13,8 @@ return [
         '/_profiler/search_bar' => [[['_route' => '_profiler_search_bar', '_controller' => 'web_profiler.controller.profiler::searchBarAction'], null, null, null, false, false, null]],
         '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
-<<<<<<< HEAD
-        '/annonceur' => [[['_route' => 'annonceur', '_controller' => 'App\\Controller\\AnnonceurController::index'], null, null, null, false, false, null]],
-        '/api/inscriptionC' => [[['_route' => 'inscriptionC', '_controller' => 'App\\Controller\\CandidatController::inscriptionCandidat'], null, ['POST' => 0], null, false, false, null]],
-=======
         '/api/inscriptionannonceur' => [[['_route' => 'inscriptionannonceu', '_controller' => 'App\\Controller\\AnnonceurController::adduser'], null, ['POST' => 0], null, false, false, null]],
-        '/candidat' => [[['_route' => 'candidat', '_controller' => 'App\\Controller\\CandidatController::index'], null, null, null, false, false, null]],
->>>>>>> e4a0b3a7c2caf4a6fd4d61982bc57eae42c64a0e
+        '/api/inscriptionC' => [[['_route' => 'inscriptionC', '_controller' => 'App\\Controller\\CandidatController::inscriptionCandidat'], null, ['POST' => 0], null, false, false, null]],
         '/offre' => [[['_route' => 'offre', '_controller' => 'App\\Controller\\OffreController::index'], null, null, null, false, false, null]],
         '/api/logincheck' => [[['_route' => 'login', '_controller' => 'App\\Controller\\SecurityController::login'], null, ['POST' => 0, 'GET' => 1], null, false, false, null]],
     ],
@@ -41,10 +36,14 @@ return [
                     .')'
                 .')'
                 .'|/api(?'
-                    .'|(?:/(index)(?:\\.([^/]++))?)?(*:204)'
+                    .'|/candidat/(?'
+                        .'|update/([^/]++)(*:204)'
+                        .'|bloquer/([^/]++)(*:228)'
+                    .')'
+                    .'|(?:/(index)(?:\\.([^/]++))?)?(*:265)'
                     .'|/(?'
-                        .'|docs(?:\\.([^/]++))?(*:235)'
-                        .'|contexts/(.+)(?:\\.([^/]++))?(*:271)'
+                        .'|docs(?:\\.([^/]++))?(*:296)'
+                        .'|contexts/(.+)(?:\\.([^/]++))?(*:332)'
                     .')'
                 .')'
             .')/?$}sDu',
@@ -57,9 +56,11 @@ return [
         136 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception::showAction'], ['token'], null, null, false, false, null]],
         149 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception::cssAction'], ['token'], null, null, false, false, null]],
         159 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
-        204 => [[['_route' => 'api_entrypoint', '_controller' => 'api_platform.action.entrypoint', '_format' => '', '_api_respond' => 'true', 'index' => 'index'], ['index', '_format'], null, null, false, true, null]],
-        235 => [[['_route' => 'api_doc', '_controller' => 'api_platform.action.documentation', '_format' => '', '_api_respond' => 'true'], ['_format'], null, null, false, true, null]],
-        271 => [
+        204 => [[['_route' => 'update_candidat', '_controller' => 'App\\Controller\\CandidatController::updateCandidat'], ['id'], ['POST' => 0], null, false, true, null]],
+        228 => [[['_route' => 'bloquer_debloquer_candidat', '_controller' => 'App\\Controller\\CandidatController::bloquerCandidat'], ['id'], ['GET' => 0], null, false, true, null]],
+        265 => [[['_route' => 'api_entrypoint', '_controller' => 'api_platform.action.entrypoint', '_format' => '', '_api_respond' => 'true', 'index' => 'index'], ['index', '_format'], null, null, false, true, null]],
+        296 => [[['_route' => 'api_doc', '_controller' => 'api_platform.action.documentation', '_format' => '', '_api_respond' => 'true'], ['_format'], null, null, false, true, null]],
+        332 => [
             [['_route' => 'api_jsonld_context', '_controller' => 'api_platform.jsonld.action.context', '_format' => 'jsonld', '_api_respond' => 'true'], ['shortName', '_format'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],

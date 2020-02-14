@@ -25,14 +25,14 @@ class AnnonceurController extends AbstractController
 public function adduser(Request $request, EntityManagerInterface $entityManager, UserPasswordEncoderInterface $passwordEncoder): Response
 {
     
-                $entreprise= new Entreprise();
-                $form = $this->createForm(EntrepriseType::class, $entreprise);
-                $data=$request->request->all();
-                $form->submit($data);
-                $entreprise->setLogo("dienne.png");
-                $entityManager = $this->getDoctrine()->getManager();
-                $entityManager->persist($entreprise);
-                $entityManager->flush();
+    $entreprise= new Entreprise();
+    $form = $this->createForm(EntrepriseType::class, $entreprise);
+    $data=$request->request->all();
+    $form->submit($data);
+    $entreprise->setLogo("dienne.png");
+    $entityManager = $this->getDoctrine()->getManager();
+    $entityManager->persist($entreprise);
+    $entityManager->flush();
 
     $utilisateur = new User();
     $form=$this->createForm(UserType::class , $utilisateur);
